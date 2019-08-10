@@ -1,0 +1,367 @@
+/**
+ * Layout Style CSS
+ */
+
+header, footer{
+  padding-left: 300px;
+
+}
+
+main {
+  padding-left: 320px;
+  padding-right: 15px;
+    flex: 1 0 auto;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/*
+* End Layout Style CSS
+*/
+
+
+/* ----------------------------
+ * Navbar
+ * ----------------------------
+ */
+
+nav .nav-wrapper {
+    padding-right: 315px; 
+    position: relative;
+    height: 100%;
+}
+
+nav li:hover{ /*Texto posicionandonos encima */
+    line-height: 28px;
+}
+
+nav ul a {
+    line-height: 28px;
+}
+
+
+.sidenav .user-view {
+    background-image: url("../img/user-background-azul2.jpg");
+
+}
+/*tamaño img perfil */
+.sidenav .user-view .circle {
+    height: 90px;
+    width: 90px;
+}
+
+.sidenav .user-view .info-container {
+     padding: 5px 15px 15px 15px;
+}
+
+.sidenav .user-view .name {
+ white-space: nowrap;
+ -ms-text-overflow: ellipsis;
+ -o-text-overflow: ellipsis;
+ text-overflow: ellipsis;
+ overflow: hidden;
+ font-size: 14px;
+ max-width: 200px;
+ color: #fff;
+ margin: 5px 5px 5px 5px;
+}
+
+/*justification of the header and li*/
+.sidenav .collapsible-header, .sidenav.fixed .collapsible-header {
+  padding: 0px 20px 0px 20px;
+}
+
+.sidenav .collapsible-body li a, .sidenav.fixed .collapsible-body li a {
+  padding: 0px 40px 0px 40px;
+}
+
+.sidenav li > a {
+    color: rgba(0, 0, 0, 0.87);
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    line-height: 48px;
+    padding: 0px 20px 0px 20px;
+}
+/* End justification of the header and li*/
+
+.logo-adjust{
+    margin-left: 25px;
+    margin-top: 2px;
+}
+
+.img-logo{
+    margin-top: 10px;
+    width: 120px;
+    height: auto;
+}
+
+.img-contentype{
+    width: 45px;
+    height: auto;
+}
+
+.contentype-adjust{
+    height: auto;
+    padding: 10px 2px 2px 2px;
+}
+
+.img-perfil{
+    width: 40px;
+    height: auto;
+}
+
+.img-play{
+    height:132px;
+    width:130px;
+}
+
+/*color efecto menu navbar*/
+.waves-effect.waves-blue .waves-ripple {
+   /* The alpha value allows the text and background color
+   of the button to still show through. */
+    background-color: #bbdefb;
+}
+/* ----------------------------
+ * End
+ * ----------------------------
+ */
+
+.curvaBoton {
+    border-radius: 20px;
+}
+
+/* ----------------------------
+ * Colores adicionales
+ * ----------------------------
+ */
+
+.purple-gradient {
+    background: -webkit-linear-gradient(50deg,#ff6ec4,#7873f5)!important;
+    background: -o-linear-gradient(50deg,#ff6ec4,#7873f5)!important;
+    background: linear-gradient(40deg,#ff6ec4,#7873f5)!important;
+}
+
+/* ----------------------------
+ * Titulos Principales
+ * ----------------------------
+ */
+
+.titelgeneral {
+    color: #9e9e9e;
+    font-size: 36px;
+}
+
+
+/*Modal */
+.modal .modal-content {
+    padding: 0px;
+}
+/* End Modal */
+
+/*
+* Tab
+*/
+
+.tabs .tab a{
+    color:#29b6f6;
+}
+.tabs .tab a.active {
+    border-bottom: 2px solid #29b6f6
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+    background-color: transparent;
+    color: #00ACC1;
+}
+
+.tabs .tab a.active {
+    background-color: transparent;
+    color: #29b6f6;
+}
+
+.tabs .indicator {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: #29b6f6;
+    will-change: left, right;
+}
+
+.tabs .tab a {
+    color: #29b6f6;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 24px;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-transition: color .28s ease, background-color .28s ease;
+    transition: color .28s ease, background-color .28s ease;
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+    background-color: rgba(29, 157, 238, 0.2);
+    outline: none;
+}
+/*End Tab */
+
+
+#lecturaspanel{
+    /*Para la Sombra*/
+    -webkit-box-shadow: 8px 8px 15px #999;
+    -moz-box-shadow: 8px 8px 15px #999;
+    filter: shadow(color=#999999, direction=135, strength=8);
+    /*Para la Sombra*/
+    margin-top: 2%;
+    width: 100%;
+    min-height: 180px;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#img_rad{
+    height: 140px;
+}
+
+#img_cartelera_cuadro{
+    height: 130px;
+}
+
+#img_cartelera_largo{
+    height: 200px;
+}
+
+
+/*Pantallas mayores de 400px and menores 992px*/
+@media only screen and (max-width : 992px){
+    header, main, footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .contentype-adjust{
+        height: auto;
+        padding: 10px 4px 2px 2px;
+    }
+
+    .img-contentype{
+        width: 40px;
+        height: auto;
+    }
+
+    nav .nav-wrapper {
+            padding-right: 5px;
+            position: relative;
+            height: 100%;
+    }
+
+    #lecturaspanel {
+        margin-top: 5%;
+        width: 100%;
+        min-height: 250px;
+    }
+
+    #img_rad{
+        height: 100px;
+    }
+
+    .img-play{
+        height:132px;
+        width:145px;
+    }
+
+    #img_cartelera_cuadro{
+        height: 180px;
+    }
+
+    #img_cartelera_largo{
+        height: 260px;
+    }
+
+
+}
+
+/*Pantallas menores de 400px*/
+@media only screen and (max-width : 400px){
+
+        nav .nav-wrapper {
+         padding-right: 5px;
+         position: relative;
+         height: 100%;
+        }
+
+        .contentype-adjust{
+            height: auto;
+            padding: 15px 4px 1px 1px;
+        }
+
+        .img-contentype{
+            padding: 0px 0px 0px 0px;
+            width: 28px;
+            height: auto;
+        }
+
+        #img_rad{
+            height: 100px;
+        }
+
+        #img_cartelera_cuadro{
+          height: 160px;
+        }
+
+         #img_cartelera_largo{
+            height: 210px;
+         }
+
+
+      }
+/*End pantallas menores de 400px*/
+
+
+
+/* Para 600px */
+@media only screen and (max-width: 1300px) and (min-width: 501px) {
+    #lecturaspanel {
+        margin-top: 5%;
+        width: 100%;
+        min-height: 210px;
+    }
+
+    #img_rad{
+        height: 85px;
+    }
+
+    #img_cartelera_cuadro{
+        height: 140px;
+    }
+
+    #img_cartelera_largo{
+        height: 240px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
